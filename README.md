@@ -1,26 +1,46 @@
-# README
+📄 NF Felipet — Sistema Web para Emissão de Nota Fiscal Eletrônica (NF-e)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicação Ruby on Rails desenvolvida para consumir uma API própria de emissão de NF-e e disponibilizar uma interface completa para gerenciamento e emissão de notas fiscais.
+O sistema oferece autenticação com Devise, formulários organizados, dashboard simples e responsivo, e toda a integração necessária com a API emissora.
 
-Things you may want to cover:
+🔗 Sistema Online: https://nf-felipet.onrender.com/
 
-* Ruby version
+🔗 API utilizada: https://api-nfe-felipet.onrender.com/
 
-* System dependencies
+🚀 Funcionalidades
 
-* Configuration
+Autenticação segura com Devise
 
-* Database creation
+Dashboard com visão geral das notas emitidas
 
-* Database initialization
+Cadastro e gerenciamento de:
 
-* How to run the test suite
+Clientes
 
-* Services (job queues, cache servers, search engines, etc.)
+Produtos
 
-* Deployment instructions
+Certificado digital
 
-* ...
-# nf_emitter
-# nf_felipet
+Formulário simples de preenchimento para emissão de NF-e
+
+Integração direta com a API emissora
+
+Exibição da resposta da API com status da nota
+
+Layout limpo e responsivo
+
+🏗️ Tecnologias Utilizadas
+
+Ruby on Rails 7
+
+PostgreSQL
+
+Devise (autenticação)
+
+Hotwire / Turbo
+
+Bootstrap 5
+
+API própria (Rails) para emissão de NF-e
+
+Render.com para deploy
