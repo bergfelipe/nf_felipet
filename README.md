@@ -1,46 +1,62 @@
-📄 NF Felipet — Sistema Web para Emissão de Nota Fiscal Eletrônica (NF-e)
+📄 NF Felipet — Sistema de Emissão de Nota Fiscal Eletrônica (NF-e)
 
-Aplicação Ruby on Rails desenvolvida para consumir uma API própria de emissão de NF-e e disponibilizar uma interface completa para gerenciamento e emissão de notas fiscais.
-O sistema oferece autenticação com Devise, formulários organizados, dashboard simples e responsivo, e toda a integração necessária com a API emissora.
+Aplicação Ruby on Rails desenvolvida para compor meu portfólio, oferecendo uma interface completa para emissão de Nota Fiscal Eletrônica (NF-e).
+O sistema consome uma API própria (também disponível no meu GitHub) responsável por validar, assinar e transmitir NF-e conforme os padrões oficiais da SEFAZ.
 
-🔗 Sistema Online: https://nf-felipet.onrender.com/
+🔗 Demonstração online: https://nf-felipet.onrender.com/
 
 🔗 API utilizada: https://api-nfe-felipet.onrender.com/
 
 🚀 Funcionalidades
 
-Autenticação segura com Devise
+🔐 Autenticação de usuários (Devise)
 
-Dashboard com visão geral das notas emitidas
+🧾 Cadastro completo de Notas Fiscais
 
-Cadastro e gerenciamento de:
+👥 Gestão de clientes
 
-Clientes
+📦 Gestão de produtos
 
-Produtos
+🔑 Upload e gerenciamento de certificados digitais (.pfx)
 
-Certificado digital
+🔗 Integração direta com a API de NF-e
 
-Formulário simples de preenchimento para emissão de NF-e
+📤 Envio, consulta e retorno completo da nota
 
-Integração direta com a API emissora
+📊 Dashboard com resumo das emissões
 
-Exibição da resposta da API com status da nota
+🖥️ Interface limpa e responsiva (Bootstrap)
 
-Layout limpo e responsivo
+🧱 Tecnologias Utilizadas
 
-🏗️ Tecnologias Utilizadas
+Ruby 3.x
 
-Ruby on Rails 7
+Rails 7.x
 
 PostgreSQL
 
 Devise (autenticação)
 
-Hotwire / Turbo
-
 Bootstrap 5
 
-API própria (Rails) para emissão de NF-e
+Turbo / Hotwire
 
-Render.com para deploy
+Render (deploy)
+
+📎 Como Funciona a Integração com a API
+
+O sistema faz requisições para a API própria:
+
+Envia os dados da NF-e (emitente, destinatário, produtos etc.)
+
+A API:
+
+valida o XML,
+
+assina digitalmente,
+
+transmite à SEFAZ,
+
+retorna protocolo, status e mensagens.
+
+O sistema exibe os retornos em tela de forma clara para o usuário final.
